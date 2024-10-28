@@ -1,0 +1,23 @@
+{
+  "personal": [
+    {
+      "id": "122331212",
+      "nombre": "Luis Morales",
+      "edad": 35,
+      "genero": "M"
+    },
+    {
+      "id": "1712969647",
+      "nombre": "Cristian Mejia",
+      "edad": 39,
+      "genero": "M"
+    },
+    {
+      "id": "16165982981",
+      "nombre": "Verónica Villagómez",
+      "edad": 33,
+      "genero": "F"
+    }
+  ],
+  "series": []
+}

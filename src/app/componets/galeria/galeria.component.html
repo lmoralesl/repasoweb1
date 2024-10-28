@@ -1,0 +1,23 @@
+<!--
+{{peliculas | json}}
+-->
+
+
+<div class="row">
+
+    @for (item of peliculas; track item){
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href={{item.posterURL}}>
+                <img src={{item.posterURL}} alt="Lights" style="width:50%">
+
+            </a>
+            <div class="caption"></div>
+            <a class="btn btn-primary" [routerLink]="[item.id]">DETALLES</a>
+            <p>{{item.title}}</p>
+        </div>
+    </div>
+
+    }
+
+</div>

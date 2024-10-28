@@ -1,0 +1,20 @@
+<form (ngSubmit)="editar(formulario)" #formulario="ngForm">
+    <label>Ingrese Cédula</label>
+    <input type="text" class="form-control" name="id"[(ngModel)]="id">
+
+    <label>Ingrese Nombre y Apellido</label>
+    <input type="text" class="form-control"name="nombre"[(ngModel)]="nombre">
+
+    <label>Ingrese Edad</label>
+    <input type="number" class="form-control"name="edad"[(ngModel)]="edad">
+
+    <label>Ingrese Género</label>
+    <select class="form-control" name="genero"[(ngModel)]="genero">
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+    </select> 
+
+    <button class="btn btn-primary" type="submit">EDITAR</button>
+        
+
+</form>
