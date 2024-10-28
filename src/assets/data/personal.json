@@ -19,5 +19,17 @@
       "genero": "F"
     }
   ],
-  "series": []
+  "series": [],
+  "users": [
+    {
+      "email": "lmorales@mail.com",
+      "password": "$2a$10$Tup6bKbU07CHg/qKn5owKOOhxKzUn9W8K8vmnr8fXEzPYpkV2gvNW",
+      "id": 1
+    },
+    {
+      "email": "juanp@mail.com",
+      "password": "$2a$10$hKAWjspaHpMZvveV67PZH.rMbY0urkVdPbY.yoe0gu6MfHaNcaBba",
+      "id": 2
+    }
+  ]
 }

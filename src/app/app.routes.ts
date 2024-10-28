@@ -6,6 +6,10 @@ import { GestionPersonalComponent } from './pages/gestion-personal/gestion-perso
 import { Error404Component } from './pages/error404/error404.component';
 import { DetallesSeriesComponent } from './pages/detalles-series/detalles-series.component';
 import { EditarComponent } from './pages/editar/editar.component';
+import { PrivadoComponent } from './pages/privado/privado.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { privadoGuard } from './guards/privado.guard';
 
 export const routes: Routes = [
 
@@ -16,6 +20,11 @@ export const routes: Routes = [
     {path: 'series/:idSeries',component: DetallesSeriesComponent},
     {path: 'editar/:idPersonal', component:EditarComponent},
 
+    /////////////////////////////////////////////////////////////
+
+    {path: 'privado', component: PrivadoComponent, canActivate:[privadoGuard]},
+    {path: 'login',component:LoginComponent},
+    {path: 'registro',component: RegistroComponent},
 
     {path: '**', component: Error404Component}
 
